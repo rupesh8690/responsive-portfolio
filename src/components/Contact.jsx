@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <>
      <h1>Contact</h1>
-      <div className="container contact"
+      <div className="container contact mb-5"
       id="contact"
       >
         <a href="https://www.google.com" target="_blank" className="items">

@@ -9,10 +9,15 @@ const Home = () => {
 
   useEffect(() => {
     const options = {
-      strings: ["Welcome to my profile", "My name is John Doe", "I am a Full Stack Developer", "Android Developer (React Native)"],
+      strings: [
+        "Welcome to my profile",
+        "My name is John Doe",
+        "I am a Full Stack Developer",
+        "Android Developer (React Native)",
+      ],
       typeSpeed: 50,
       backSpeed: 50,
-      loop: true
+      loop: true,
     };
 
     // Initialize Typed.js
@@ -24,18 +29,16 @@ const Home = () => {
     };
   }, []);
 
-  
   return (
     <>
-      <div className="container home" id="home">
-        <div className="left"
-        data-aos="fade-up-right"
-    data-aos-duration="1000"
+      <div className="row home" id="home">
+        <div
+          className="col-md-6 left "
+          data-aos="fade-up-right"
+          data-aos-duration="1000"
         >
-          <h3 ref={typedRef}>
-            
-          </h3>
-
+          <h3 ref={typedRef}></h3>
+           
           <a
             href={pdf}
             download="resume.pdf"
@@ -45,13 +48,15 @@ const Home = () => {
           </a>
         </div>
 
-        <div className="right">
-          <div className="img" data-aos="fade-up-left"
-    data-aos-duration="1000">
+        <div className="col-md-6 d-flex align-items-center justify-content-center right">
+        <div className="img" data-aos="fade-up-left" data-aos-duration="1000">
             <img src={`/assets/${hero.imgSrc}`} alt="hero" />
           </div>
+
         </div>
       </div>
+
+     
     </>
   );
 };

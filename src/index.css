@@ -1,3 +1,6 @@
+.container{
+  overflow-x: hidden ;
+}
 /* varibale for box shadow */
 :root{
   --box-shadow: 5px 5px 10px 0px rgba(101,175,10,0.5);
@@ -15,23 +18,25 @@ a{
   text-decoration: none;
   color: white;
 }
- /* navbar section */
-.nav_bar{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 15px;
-}
+ 
 
-.nav_bar .nav_items{
-  padding: 16px;
+.navbar .navbar-brand,  .navbar-nav .nav-item .nav-link{
+  color: white;
   font-size: 1.2rem;
   font-weight: bold;
+  padding: 1.2rem;
 }
 
-.nav_items:hover{
+.navbar-brand:hover, .nav-item:hover {
   border-bottom: 3px solid yellow;
 }
+
+/* Navbar.css */
+.custom-toggler {
+  border: none; /* Remove default border if needed */
+  background-color: white; /* Change this to your desired color */
+}
+
 
 /* home section */
 
@@ -105,27 +110,52 @@ a{
 
 /* experience */
 
-.ex{
-  width: 900px;
+/* .ex{
+  width: 57rem;
 }
 .ex-items{
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between; 
   align-items: center;
   background-color: var(--bg-color);
   margin: 20px;
-  width: 800px;
+   width: 50rem; 
   padding: 30px ;
-  border-radius: 10px;
+  border-radius: 1rem;
   border: 1px solid yellow;
   box-shadow: var(--box-shadow);
+} */
+
+/* Default styles for .x */
+.ex {
+  width: 57rem; /* Width for larger screens */
+
 }
+
+.ex-items{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid yellow;
+  background-color: var(--bg-color);
+  box-shadow: var(--box-shadow);
+  border-radius: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+ 
+}
+@media (max-width: 600px) {
+  .ex{
+    width: 20rem;
+  }
+}
+
+
 
 /* skills */
 
-.skills{
+/* .skills{
   width: 900px;
- 
 
 }
 
@@ -135,11 +165,11 @@ align-items: center;
 justify-content: center;
 flex-wrap: wrap;
 width: 800px;
-margin: auto; /*center the elements horizontally*/
+margin: auto; 
 
-}
-.skills .items .item {
-  width: calc(33.33%);
+}*/
+.skills .item {
+  width: calc(60.33%);
   background-color: black;
   margin: 10px;
   text-align: center;
@@ -148,9 +178,25 @@ margin: auto; /*center the elements horizontally*/
   border: 1px solid yellow;
   box-shadow: var(--box-shadow);
 }
-.skills .items .item img{
-  width: 70px;
+
+.skills{
+  width: 900px;
+ 
 }
+.skills .item img{
+  width: 70px;
+  
+}
+
+@media (max-width: 500px) {
+  .skills .item{
+    width: calc(35%);
+    margin-left: 1rem;
+  }
+  
+  
+}
+
 
 /* contact */
 .contact{

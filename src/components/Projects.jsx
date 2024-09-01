@@ -3,15 +3,17 @@ import project from "./Data/projects.json";
 const Projects = () => {
   return (
     <>
-      <div className="container projects" id="project">
+      <div className="container projects  mb-3" id="project">
         <h1>Projects</h1>
 
         <div className="row d-flex align-items-center justify-content-center">
           {project.map((data) => {
             return (
-              <div key={data.id} className="my-3 col-md-4 col-lg-3 col-sm-6  "
-              data-aos="flip-right"
-    data-aos-duration="1000"
+              <div
+                key={data.id}
+                className="my-3 col-md-4 col-lg-3 col-sm-6  "
+                data-aos="flip-right"
+                data-aos-duration="1000"
               >
                 <div
                   className="card  bg-dark text-light "

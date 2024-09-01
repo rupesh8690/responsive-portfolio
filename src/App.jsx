@@ -22,9 +22,11 @@ function App() {
     <div className="container">
       <Home/>
        <Experience/>
+    
        <Skills/>
        <Projects/>
-       <Contact/>
+      
+       <Contact/> 
     </div>
     </>
  
