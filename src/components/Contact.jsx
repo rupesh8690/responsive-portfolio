@@ -11,7 +11,7 @@ const Contact = () => {
         <a href="https://www.facebook.com/rupesh.love.9/" target="_blank" className="items">
           <i className="fa-brands fa-facebook" />
         </a>
-        <a href="https://www.google.com" target="_blank" className="items">
+        <a href="https://www.linkedin.com/in/rupesh-thakur-b5738a32a/" target="_blank" className="items">
           <i className="fa-brands fa-linkedin" />
         </a>
         <a href="https://github.com/rupesh8690" target="_blank" className="items">
