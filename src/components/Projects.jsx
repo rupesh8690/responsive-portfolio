@@ -37,13 +37,30 @@ const Projects = () => {
                     />
                   </div>
                   <div className="card-body text-center ">
-                    <h5 className="card-title ">{data.title}</h5>
+                    <h5 className="card-title">{data.title}</h5>
                     <p className="card-text">{data.description}</p>
-                    <a href={data.demo} className="btn btn-primary">
-                      Demo
-                    </a>
 
-                    <a href={data.code} className="btn bg-warning mx-4">
+                    {data.demo ? (
+                      <a
+                        href={data.demo}
+                        className="btn btn-primary"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Demo
+                      </a>
+                    ) : (
+                      <button className="btn btn-secondary" disabled>
+                        Demo 
+                      </button>
+                    )}
+
+                    <a
+                      href={data.source}
+                      className="btn bg-warning mx-4"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       Code
                     </a>
                   </div>

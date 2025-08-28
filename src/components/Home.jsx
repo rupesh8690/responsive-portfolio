@@ -1,5 +1,5 @@
 import React from "react";
-import pdf from "../pdf/resume.pdf";
+import pdf from "../pdf/resume_rupesh.pdf";
 import hero from "./Data/hero.json";
 import Typed from "typed.js";
 import { useEffect, useRef } from "react";
@@ -10,11 +10,14 @@ const Home = () => {
   useEffect(() => {
     const options = {
       strings: [
-        "Welcome to my profile",
-        "My name is John Doe",
-        "I am a Full Stack Developer",
-        "Android Developer (React Native)",
+        "Welcome to my portfolio",
+        "I am Rupesh Thakur",
+        "MERN Stack Developer",
+        "Java & Android Developer",
+        "Passionate about AI & ML",
+        "MCA Student at Chandigarh University",
       ],
+
       typeSpeed: 50,
       backSpeed: 50,
       loop: true,
@@ -38,10 +41,10 @@ const Home = () => {
           data-aos-duration="1000"
         >
           <h3 ref={typedRef}></h3>
-           
+
           <a
             href={pdf}
-            download="resume.pdf"
+            download="resume_rupesh.pdf"
             className="btn btn-outline-warning my-3"
           >
             Download Resume
@@ -49,14 +52,11 @@ const Home = () => {
         </div>
 
         <div className="col-md-6 d-flex align-items-center justify-content-center right">
-        <div className="img" data-aos="fade-up-left" data-aos-duration="1000">
+          <div className="img" data-aos="fade-up-left" data-aos-duration="1000">
             <img src={`/assets/${hero.imgSrc}`} alt="hero" />
           </div>
-
         </div>
       </div>
-
-     
     </>
   );
 };

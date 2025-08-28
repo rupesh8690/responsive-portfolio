@@ -7,19 +7,17 @@ const Contact = () => {
       <div className="container contact mb-5"
       id="contact"
       >
-        <a href="https://www.google.com" target="_blank" className="items">
-          <i className="fa-brands fa-instagram" />
-        </a>
-        <a href="https://www.google.com" target="_blank" className="items">
+      
+        <a href="https://www.facebook.com/rupesh.love.9/" target="_blank" className="items">
           <i className="fa-brands fa-facebook" />
         </a>
         <a href="https://www.google.com" target="_blank" className="items">
           <i className="fa-brands fa-linkedin" />
         </a>
-        <a href="https://www.google.com" target="_blank" className="items">
+        <a href="https://github.com/rupesh8690" target="_blank" className="items">
           <i className="fa-brands fa-github" />
         </a>
-        <a href="mailto:rupeshlove8690@gmail.com" target="_blank" className="items">
+        <a href="mailto:rupesh242@outlook.com" target="_blank" className="items">
           <i className="fa-regular fa-envelope" />
         </a>
         
